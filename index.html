@@ -1,36 +1,97 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>ameteorite</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    
+    <title>Document</title>
     
     <style>
+        *{
+            margin:0px auto;
+        }
+ 
+        #all{
+            text-align: center;
+        }
+ 
+        div.logo {
+            width:1300px;
+            height:60px;
+            background-color: yellow;
+        }
+ 
+        div.copyright {
+            width:1300px;
+            height:60px;
+            background-color: goldenrod;
+        }
+ 
+        div.middle {
+            width:1300px;
+            height: 500px;
+        }
+ 
+        div.menu {
+            width:200px;
+            height: 500px;
+            background-color: #E4393C;
+            /*菜单左浮动*/
+            float:left;
+        }
+ 
+        div.main {
+            width:1100px;
+            height: 500px;
+            background-color: #bad0ef;
+            /*主题右浮动*/
+            float:right;
+            /*左浮动、右浮动都可以*/
+            float:left;
+        }
+        
         div.demo {
             float: left;
             border:1px solid #ccc;}
-        div.demo i {
+        div.demo p {
+            opacity: 1;
+            transition-duration: 0s;
+        }
+        div.demo p:hover {
             cursor: pointer;
             height: 50px;
             transition: opacity 2s;
-            width: 50px;
-            background: #000;
+            width: 100px;
+            background: #9999;
             float: left;
             margin: 5px;
-            opacity: 0;}
-        div.demo i:hover {
-            opacity: 1;
-            transition-duration: 0s;}
-    </style>
+            opacity: 0;
+        }
+            
+    </style> 
 </head>
-
+ 
 <body>
-    <div class="demo">
-        <div>        
-            <i></i>
-            <i></i>
-            <i></i>
+    <div id="all">
+        <div class="logo">
+            logo
+        </div>
+        
+        <div class="middle">             
+             <div class="menu">
+                menu                
+             </div>
+             
+            <div class="main">
+                网站的主体内容
+                <div class="demo">                    
+                    <p><b>ameteorite</b></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            bottom
         </div>
     </div>
-    <h1>abctry</h1>    
 </body>
 </html>
